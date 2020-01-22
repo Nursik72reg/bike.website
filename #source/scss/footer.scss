@@ -1,0 +1,70 @@
+//====================================================================================================
+.footer {
+	background-color: #f7f7f7;
+	&__row {
+		display: flex;
+		align-items: center;
+		@include flexbox();
+		padding: 100px 0px;
+	}
+	.column-footer{
+		@include flexbox();
+		justify-content: center;
+		align-items: center;
+	}
+
+
+	&__column {
+		flex:0 1 33.333%;
+	}
+	&__addres {
+		font-size: 14px;
+		font-style: italic;
+		line-height: 17.87px;
+		color: #848789;
+		.B{
+			font-family: "Lato - Bold";
+			font-size: 16px;
+			font-weight: 700;
+		}
+	}
+	&__social {
+		
+	}
+	&__dev {
+	}
+}
+.container {
+}
+.social {
+	&__link{
+		margin: 0px 7px;
+	}
+}
+.dev {
+	@include flexbox();
+	justify-content: flex-end;
+	
+	&__text {
+	}
+	&__icon {
+		
+	}
+}
+@media(max-width: 1100px){
+	.footer{
+		padding: 50px;
+	}
+}
+@media(max-width: 600px){
+	.footer__row{
+		flex-direction: column;
+		text-align: center;
+	}
+	.footer__column{
+		margin:0px 0px 20px 0px;
+	}
+}
+
+//====================================================================================================
+
